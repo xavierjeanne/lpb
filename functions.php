@@ -5,7 +5,8 @@ include('inc/constants.php');
 // Include your functions files here
 include('inc/enqueues.php');
 include('inc/excerpt.php');
-
+include('inc/back-office.php');
+include('inc/class-wp-bootstrap-navwalker.php');
 /**
  * Don't hesitate to use the WP code snippet generator Hasty : https://www.wp-hasty.com/
  */
@@ -36,7 +37,7 @@ add_action('after_setup_theme', 'theme_set_theme_supports');
 /**
  * Declare theme width global var
  */
-if ( ! isset($content_width)) {
+if (!isset($content_width)) {
     // @TODO : edit the value for your own specifications
     $content_width = 1170; // Bootstrap default container value
 }
@@ -49,7 +50,8 @@ if ( ! isset($content_width)) {
  */
 //@TODO : declare your menus here
 register_nav_menus(array(
-    'main_menu' => __('Main menu', I18N_DOMAIN)
+    'header_menu' => __('Header menu', I18N_DOMAIN),
+    'footer_menu' => __('Footer menu', I18N_DOMAIN)
 ));
 
 
@@ -61,7 +63,7 @@ register_nav_menus(array(
  */
 function theme_register_sidebars()
 {
-    if ( ! function_exists('register_sidebar')) {
+    if (!function_exists('register_sidebar')) {
         return;
     }
     //@TODO : declare your sidebar here
@@ -101,9 +103,14 @@ function theme_remove_emojis()
 //add_action( 'init', 'theme_remove_emojis' ); //@TODO: Uncomment if you don't need emojis and want to optimize your site
 
 
-include_once( get_stylesheet_directory() .'/inc/back-office.php');
-include_once( get_stylesheet_directory() .'/inc/mails.php');
+include_once(get_stylesheet_directory() . '/inc/back-office.php');
+include_once(get_stylesheet_directory() . '/inc/mails.php');
 
 
+function wpse_setup_theme()
+{
+    add_theme_support('post-thumbnails');
+    add_image_size('slider', 535, 357, true);
+}
 
-
+add_action('after_setup_theme', 'wpse_setup_theme');

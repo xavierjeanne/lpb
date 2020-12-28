@@ -12,25 +12,30 @@ function theme_enqueues_styles_scripts()
 //        wp_enqueue_script('comment-reply');
 //    }
 
-    // Popper
-    wp_enqueue_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js');
 
-   //  Bootstrap : load js part from cdn
-//    wp_enqueue_script(
-//        'bootstrap',
-//        'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
-//        array('jquery', 'popper'),
-//        '4.1.3',
-//        true
-//    );
+    //jQuery
+
+    wp_enqueue_script('jQuery','https://code.jquery.com/jquery-3.5.1.min.js');
+    // Popper
+    wp_enqueue_script('popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js');
+
+
+   // Bootstrap : load js part from cdn
+  /* wp_enqueue_script(
+       'bootstrap',
+       'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js',
+       array('jQuery', 'popper'),
+      '4.5.2',
+       true
+   );*/
 
 
     // @TODO : Uncomment what you need
     // Animate CSS
-    //wp_enqueue_style( 'animate', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' );
+    wp_enqueue_style( 'animate', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' );
 
     // Font Awesome
-    // wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
+    wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' );
 
 
     // ENQUEUE your css below
@@ -42,6 +47,7 @@ function theme_enqueues_styles_scripts()
     wp_enqueue_style('theme', get_stylesheet_directory_uri() . '/dist/css/theme.css');
 
     // Default js of your theme to add your own js scripts, add dependances if needed
+    //wp_enqueue_script('libs', get_stylesheet_directory_uri() . '/dist/js/libs.js');
     wp_enqueue_script('main', get_stylesheet_directory_uri() . '/dist/js/main.js', array(), '1.0', true);
 
 }
