@@ -10129,11 +10129,10 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: "Roboto Regular";
   color: #495057;
-  background-color: #FFFFFF;
   font-size: 1.2rem; }
 
 /***** LOADER *****/
-/* line 10, assets/scss/base/_base.scss */
+/* line 9, assets/scss/base/_base.scss */
 #loader-page {
   width: 100%;
   height: 100vh;
@@ -10153,7 +10152,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   z-index: 9999; }
-  /* line 21, assets/scss/base/_base.scss */
+  /* line 20, assets/scss/base/_base.scss */
   #loader-page #loader {
     width: 70px;
     height: 70px;
@@ -10225,8 +10224,131 @@ body {
  * Layout
  */
 /* line 2, assets/scss/layout/_header.scss */
-#header .logo-img {
-  width: 50px; }
+header .navbar {
+  z-index: 2;
+  background-color: none;
+  -webkit-transition: background-color 0.6s linear;
+  transition: background-color 0.6s linear;
+  /**** Animation icon menu burger ****/ }
+  /* line 7, assets/scss/layout/_header.scss */
+  header .navbar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    box-shadow: 1px 1px 19px rgba(0, 0, 0, 0.8); }
+  /* line 17, assets/scss/layout/_header.scss */
+  header .navbar .navbar-brand img {
+    width: 50px;
+    -webkit-transition: width 0.6s linear;
+    transition: width 0.6s linear; }
+  /* line 26, assets/scss/layout/_header.scss */
+  header .navbar .navbar-brand span {
+    font-size: 1.6rem;
+    font-family: "Roboto Bold";
+    font-weight: 800;
+    font-style: italic;
+    color: #872B2E;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s; }
+    /* line 34, assets/scss/layout/_header.scss */
+    header .navbar .navbar-brand span:hover {
+      color: #C00000; }
+  /* line 43, assets/scss/layout/_header.scss */
+  header .navbar button.navbar-toggler {
+    width: 35px;
+    height: 16px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    outline: none;
+    cursor: pointer; }
+    /* line 58, assets/scss/layout/_header.scss */
+    header .navbar button.navbar-toggler span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: #872B2E;
+      border-radius: 50px;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .25s ease-in-out;
+      transition: .25s ease-in-out; }
+    /* line 77, assets/scss/layout/_header.scss */
+    header .navbar button.navbar-toggler span:nth-child(1) {
+      top: 0px;
+      -webkit-transform-origin: left center;
+      transform-origin: left center; }
+    /* line 85, assets/scss/layout/_header.scss */
+    header .navbar button.navbar-toggler span:nth-child(2) {
+      top: 10px;
+      -webkit-transform-origin: left center;
+      transform-origin: left center; }
+    /* line 93, assets/scss/layout/_header.scss */
+    header .navbar button.navbar-toggler span:nth-child(3) {
+      top: 20px;
+      -webkit-transform-origin: left center;
+      transform-origin: left center; }
+  /* line 104, assets/scss/layout/_header.scss */
+  header .navbar button.navbar-toggler.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px; }
+  /* line 113, assets/scss/layout/_header.scss */
+  header .navbar button.navbar-toggler.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0; }
+  /* line 118, assets/scss/layout/_header.scss */
+  header .navbar button.navbar-toggler.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 20px;
+    left: 8px; }
+  /* line 129, assets/scss/layout/_header.scss */
+  header .navbar #navbarSupportedContent ul#menu-header {
+    height: 100vh;
+    padding-top: 50px; }
+    @media (min-width: 1200px) {
+      /* line 129, assets/scss/layout/_header.scss */
+      header .navbar #navbarSupportedContent ul#menu-header {
+        height: auto;
+        padding-top: 0px; } }
+    /* line 138, assets/scss/layout/_header.scss */
+    header .navbar #navbarSupportedContent ul#menu-header li {
+      font-size: 1.4rem;
+      font-family: "Roboto Bold";
+      font-weight: 800;
+      font-style: italic;
+      margin: 0 25px; }
+      /* line 145, assets/scss/layout/_header.scss */
+      header .navbar #navbarSupportedContent ul#menu-header li a {
+        color: #872B2E;
+        -webkit-transition-duration: 0.5s;
+                transition-duration: 0.5s; }
+        /* line 149, assets/scss/layout/_header.scss */
+        header .navbar #navbarSupportedContent ul#menu-header li a:hover {
+          color: #C00000; }
+      /* line 154, assets/scss/layout/_header.scss */
+      header .navbar #navbarSupportedContent ul#menu-header li [aria-current="page"] {
+        color: #C00000; }
+
+/* line 164, assets/scss/layout/_header.scss */
+.header_main {
+  background: url("../images/rdc.jpg") no-repeat;
+  background-size: cover;
+  min-height: 900px;
+  background-position: center bottom;
+  -webkit-filter: grayscale(20%);
+          filter: grayscale(20%);
+  z-index: 1;
+  margin-top: -100px; }
 
 /**
  * Modules

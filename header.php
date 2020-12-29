@@ -19,10 +19,35 @@
 </head>
 
 <body <?php echo body_class(); ?>>
-    <div class="container-fluid">
-        <header id="header" role="banner" class="row">
-            <nav class="navbar">
-                <a class="navbar-brand ml-lg-5" href="<?php echo home_url();?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo.png" alt="Les Petites Bouches" class="logo-img"/></a>
+
+    <div class="container-fluid p-0">
+        <header role="banner">
+        <nav class="navbar navbar-expand-xl pt-3 pb-3 ">
+                <a class="navbar-brand" href="<?php echo home_url();?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo.png" alt="Les Petites Bouches" class="logo-img"/><span class="d-none d-md-inline-block ml-3">Les Petites Bouches</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <!--<span class="navbar-toggler-icon"></span>-->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse ml-auto justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="menu-header">
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="#presentation">Présentation</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="#plat">Plats</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="#avis">Avis</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
+        <div class="header_main">
+        </div>
         <section id="content" role="main">
