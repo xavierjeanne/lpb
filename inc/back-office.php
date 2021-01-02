@@ -5,40 +5,39 @@
 ////////// AJOUT PAGES D'OPTION ///////////////////
 //////////////////////////////////////////////////////
 
-if( function_exists('acf_add_options_page') ) {
+if (function_exists('acf_add_options_page')) {
 
     acf_add_options_page(array(
-        'page_title' 	=> 'Paramètres WP',
-        'menu_title'	=> 'Paramètres WP',
-        'menu_slug' 	=> 'theme-general-settings',
-        'capability'	=> 'edit_posts',
-        'redirect'		=> true
+        'page_title'     => 'Paramètres WP',
+        'menu_title'    => 'Paramètres WP',
+        'menu_slug'     => 'theme-general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'        => true
     ));
 
     acf_add_options_sub_page(array(
-        'page_title' 	=> 'Paramètres Home',
-        'menu_title'	=> 'Home',
-        'parent_slug'	=> 'theme-general-settings',
+        'page_title'     => 'Paramètres Home',
+        'menu_title'    => 'Home',
+        'parent_slug'    => 'theme-general-settings',
     ));
 
     acf_add_options_sub_page(array(
-        'page_title' 	=> 'Partenaires',
-        'menu_title'	=> 'Partenaires',
-        'parent_slug'	=> 'theme-general-settings',
+        'page_title'     => 'Partenaires',
+        'menu_title'    => 'Partenaires',
+        'parent_slug'    => 'theme-general-settings',
     ));
 
     acf_add_options_sub_page(array(
-        'page_title' 	=> 'Newsletter',
-        'menu_title'	=> 'Newsletter',
-        'parent_slug'	=> 'theme-general-settings',
+        'page_title'     => 'Newsletter',
+        'menu_title'    => 'Newsletter',
+        'parent_slug'    => 'theme-general-settings',
     ));
 
     acf_add_options_sub_page(array(
-        'page_title' 	=> 'Formulaire de Contact',
-        'menu_title'	=> 'Contact',
-        'parent_slug'	=> 'theme-general-settings',
+        'page_title'     => 'Formulaire de Contact',
+        'menu_title'    => 'Contact',
+        'parent_slug'    => 'theme-general-settings',
     ));
-
 }
 
 
@@ -73,13 +72,14 @@ function stop_access_by_role()
     }
 }
 
-add_action( 'admin_init', 'stop_access_by_role' );
+add_action('admin_init', 'stop_access_by_role');
 
 ////////////////////////////////
 ////// Move Yoast to bottom
 ////////////////////////////////
 ///
-function yoasttobottom() {
+function yoasttobottom()
+{
     return 'low';
 }
-add_filter( 'wpseo_metabox_prio', 'yoasttobottom');
+add_filter('wpseo_metabox_prio', 'yoasttobottom');

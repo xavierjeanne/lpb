@@ -10331,15 +10331,19 @@ header .navbar {
       header .navbar #navbarSupportedContent ul#menu-header li a {
         color: #872B2E;
         -webkit-transition-duration: 0.5s;
-                transition-duration: 0.5s; }
-        /* line 149, assets/scss/layout/_header.scss */
+                transition-duration: 0.5s;
+        border-bottom: 5px double #872B2E;
+        width: 80%; }
+        /* line 151, assets/scss/layout/_header.scss */
         header .navbar #navbarSupportedContent ul#menu-header li a:hover {
-          color: #C00000; }
-      /* line 154, assets/scss/layout/_header.scss */
+          color: #C00000;
+          border-bottom: 5px double #C00000;
+          width: 100%; }
+      /* line 158, assets/scss/layout/_header.scss */
       header .navbar #navbarSupportedContent ul#menu-header li [aria-current="page"] {
         color: #C00000; }
 
-/* line 164, assets/scss/layout/_header.scss */
+/* line 168, assets/scss/layout/_header.scss */
 .header_main {
   background: url("../images/rdc.jpg") no-repeat;
   background-size: cover;
@@ -10363,6 +10367,57 @@ header .navbar {
 /**
  * Modules : pages
  */
+/* line 2, assets/scss/modules/pages/_default.scss */
+.home #presentation {
+  background-color: #872B2E;
+  -webkit-transform: skewY(-4deg);
+          transform: skewY(-4deg);
+  margin-top: -70px;
+  color: white;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black; }
+  /* line 10, assets/scss/modules/pages/_default.scss */
+  .home #presentation div {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg); }
+  /* line 15, assets/scss/modules/pages/_default.scss */
+  .home #presentation li {
+    list-style-type: none;
+    font-size: 1.5rem; }
+
+/* line 23, assets/scss/modules/pages/_default.scss */
+.home #menu .color {
+  color: #872B2E; }
+
+/* line 27, assets/scss/modules/pages/_default.scss */
+.home #menu a {
+  font-weight: bold; }
+
+/* line 31, assets/scss/modules/pages/_default.scss */
+.home #menu .active {
+  color: black; }
+
+/* line 35, assets/scss/modules/pages/_default.scss */
+.home #menu body {
+  font-style: italic; }
+
+/* line 39, assets/scss/modules/pages/_default.scss */
+.home #menu h2 {
+  color: #C00000;
+  text-decoration: underline;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+/* line 47, assets/scss/modules/pages/_default.scss */
+.home #menu .info {
+  color: #C00000;
+  font-size: 0.8rem; }
+
+/* line 52, assets/scss/modules/pages/_default.scss */
+.home #menu .titre {
+  font-weight: bold; }
+
 /**
  * Modules ; posts
  */
