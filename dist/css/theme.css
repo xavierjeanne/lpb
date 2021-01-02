@@ -10331,19 +10331,15 @@ header .navbar {
       header .navbar #navbarSupportedContent ul#menu-header li a {
         color: #872B2E;
         -webkit-transition-duration: 0.5s;
-                transition-duration: 0.5s;
-        border-bottom: 5px double #872B2E;
-        width: 80%; }
-        /* line 151, assets/scss/layout/_header.scss */
+                transition-duration: 0.5s; }
+        /* line 149, assets/scss/layout/_header.scss */
         header .navbar #navbarSupportedContent ul#menu-header li a:hover {
-          color: #C00000;
-          border-bottom: 5px double #C00000;
-          width: 100%; }
-      /* line 158, assets/scss/layout/_header.scss */
+          color: #C00000; }
+      /* line 155, assets/scss/layout/_header.scss */
       header .navbar #navbarSupportedContent ul#menu-header li [aria-current="page"] {
         color: #C00000; }
 
-/* line 168, assets/scss/layout/_header.scss */
+/* line 165, assets/scss/layout/_header.scss */
 .header_main {
   background: url("../images/rdc.jpg") no-repeat;
   background-size: cover;

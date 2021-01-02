@@ -145,13 +145,10 @@ header {
                     a {
                         color: $maroun;
                         transition-duration: 0.5s;
-                        border-bottom: 5px double $maroun;
-                        width: 80%;
 
                         &:hover {
                             color: $red;
-                            border-bottom: 5px double $red;
-                            width: 100%;
+
                         }
                     }
 

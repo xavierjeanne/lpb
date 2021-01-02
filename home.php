@@ -9,8 +9,8 @@
 <?php get_header(); ?>
 <div class="row text-center p-5" id="presentation">
     <div class="col-12">
-        <h1 class="text-left p-5">Horaires</h1>
-        <ul class="text-center wow animate__animated animate__fadeInRight">
+        <h1 class="text-left p-5 m-5">Horaires</h1>
+        <ul class="text-center  m-5 wow animate__animated animate__fadeInRight">
             <li>Mardi : 11h-15h => 18h-23h</liMardi>
             <li>Mercredi : 11h-15h => 18h-23h</li>
             <li>Jeudi : 11h-15h => 18h-23h</li>
