@@ -1,14 +1,14 @@
 .home {
     #presentation {
         background-color: $maroun;
-        transform: skewY(-4deg);
+        transform: skewY(-2deg);
         margin-top: -70px;
         color: white;
-        border-top: 10px solid black;
+        border-top: 10px solid white;
         border-bottom: 10px solid black;
 
-        div {
-            transform: rotate(4deg);
+        div.horaires {
+            transform: rotate(2deg);
 
         }
 
@@ -21,7 +21,7 @@
 
     #menu {
         .color {
-            color: #872B2E;
+            color: $maroun;
         }
 
         a {
@@ -37,7 +37,7 @@
         }
 
         h2 {
-            color: #C00000;
+            color: $maroun;
             text-decoration: underline;
             text-align: left;
             font-weight: bold;
@@ -45,11 +45,14 @@
         }
 
         .info {
-            color: #C00000;
+            color: $maroun;
             font-size: 0.8rem;
         }
 
         .titre {
+            font-weight: bold;
+        }
+        .price{
             font-weight: bold;
         }
     }

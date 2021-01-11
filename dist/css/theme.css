@@ -10366,16 +10366,16 @@ header .navbar {
 /* line 2, assets/scss/modules/pages/_default.scss */
 .home #presentation {
   background-color: #872B2E;
-  -webkit-transform: skewY(-4deg);
-          transform: skewY(-4deg);
+  -webkit-transform: skewY(-2deg);
+          transform: skewY(-2deg);
   margin-top: -70px;
   color: white;
-  border-top: 10px solid black;
+  border-top: 10px solid white;
   border-bottom: 10px solid black; }
   /* line 10, assets/scss/modules/pages/_default.scss */
-  .home #presentation div {
-    -webkit-transform: rotate(4deg);
-            transform: rotate(4deg); }
+  .home #presentation div.horaires {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg); }
   /* line 15, assets/scss/modules/pages/_default.scss */
   .home #presentation li {
     list-style-type: none;
@@ -10399,7 +10399,7 @@ header .navbar {
 
 /* line 39, assets/scss/modules/pages/_default.scss */
 .home #menu h2 {
-  color: #C00000;
+  color: #872B2E;
   text-decoration: underline;
   text-align: left;
   font-weight: bold;
@@ -10407,11 +10407,15 @@ header .navbar {
 
 /* line 47, assets/scss/modules/pages/_default.scss */
 .home #menu .info {
-  color: #C00000;
+  color: #872B2E;
   font-size: 0.8rem; }
 
 /* line 52, assets/scss/modules/pages/_default.scss */
 .home #menu .titre {
+  font-weight: bold; }
+
+/* line 55, assets/scss/modules/pages/_default.scss */
+.home #menu .price {
   font-weight: bold; }
 
 /**
