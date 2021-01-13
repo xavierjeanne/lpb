@@ -167,7 +167,16 @@ header {
     background-size: cover;
     min-height: 900px;
     background-position: center bottom;
-    filter: grayscale(20%);
+    background-color: white;
     z-index: 1;
     margin-top: -100px;
+    .resa{
+        margin-top:400px;
+        width:80%;
+        h1{
+            font-style:italic;
+            color:$maroun;
+            font-weight:bold;
+        }
+    }
 }

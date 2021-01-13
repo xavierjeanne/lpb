@@ -49,5 +49,13 @@
             </nav>
         </header>
         <div class="header_main">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 resa p-4">
+                        <h1 class="text-left">Bienvenue au restaurant les petites bouches</h1>
+                        <p class="text-right"><a href="">Réservation par téléphone</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
         <section id="content" role="main">

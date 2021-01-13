@@ -6,6 +6,8 @@
         color: white;
         border-top: 10px solid white;
         border-bottom: 10px solid black;
+        max-width: 100%;
+        margin-left: 0;
 
         div.horaires {
             transform: rotate(2deg);
@@ -52,7 +54,8 @@
         .titre {
             font-weight: bold;
         }
-        .price{
+
+        .price {
             font-weight: bold;
         }
     }

@@ -10345,10 +10345,18 @@ header .navbar {
   background-size: cover;
   min-height: 900px;
   background-position: center bottom;
-  -webkit-filter: grayscale(20%);
-          filter: grayscale(20%);
+  background-color: white;
   z-index: 1;
   margin-top: -100px; }
+  /* line 173, assets/scss/layout/_header.scss */
+  .header_main .resa {
+    margin-top: 400px;
+    width: 80%; }
+    /* line 176, assets/scss/layout/_header.scss */
+    .header_main .resa h1 {
+      font-style: italic;
+      color: #872B2E;
+      font-weight: bold; }
 
 /**
  * Modules
@@ -10371,33 +10379,35 @@ header .navbar {
   margin-top: -70px;
   color: white;
   border-top: 10px solid white;
-  border-bottom: 10px solid black; }
-  /* line 10, assets/scss/modules/pages/_default.scss */
+  border-bottom: 10px solid black;
+  max-width: 100%;
+  margin-left: 0; }
+  /* line 12, assets/scss/modules/pages/_default.scss */
   .home #presentation div.horaires {
     -webkit-transform: rotate(2deg);
             transform: rotate(2deg); }
-  /* line 15, assets/scss/modules/pages/_default.scss */
+  /* line 17, assets/scss/modules/pages/_default.scss */
   .home #presentation li {
     list-style-type: none;
     font-size: 1.5rem; }
 
-/* line 23, assets/scss/modules/pages/_default.scss */
+/* line 25, assets/scss/modules/pages/_default.scss */
 .home #menu .color {
   color: #872B2E; }
 
-/* line 27, assets/scss/modules/pages/_default.scss */
+/* line 29, assets/scss/modules/pages/_default.scss */
 .home #menu a {
   font-weight: bold; }
 
-/* line 31, assets/scss/modules/pages/_default.scss */
+/* line 33, assets/scss/modules/pages/_default.scss */
 .home #menu .active {
   color: black; }
 
-/* line 35, assets/scss/modules/pages/_default.scss */
+/* line 37, assets/scss/modules/pages/_default.scss */
 .home #menu body {
   font-style: italic; }
 
-/* line 39, assets/scss/modules/pages/_default.scss */
+/* line 41, assets/scss/modules/pages/_default.scss */
 .home #menu h2 {
   color: #872B2E;
   text-decoration: underline;
@@ -10405,16 +10415,16 @@ header .navbar {
   font-weight: bold;
   margin-bottom: 20px; }
 
-/* line 47, assets/scss/modules/pages/_default.scss */
+/* line 49, assets/scss/modules/pages/_default.scss */
 .home #menu .info {
   color: #872B2E;
   font-size: 0.8rem; }
 
-/* line 52, assets/scss/modules/pages/_default.scss */
+/* line 54, assets/scss/modules/pages/_default.scss */
 .home #menu .titre {
   font-weight: bold; }
 
-/* line 55, assets/scss/modules/pages/_default.scss */
+/* line 58, assets/scss/modules/pages/_default.scss */
 .home #menu .price {
   font-weight: bold; }
 

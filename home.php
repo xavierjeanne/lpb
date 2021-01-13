@@ -9,14 +9,14 @@
 <?php get_header(); ?>
 <div class="row text-center p-5" id="presentation">
     <div class="col-12 horaires">
-        <h2 class="text-md-left p-5">Horaires</h2>
+        <h2 class="text-md-right p-5">-- Horaires --</h2>
         <div class="text-md-center pl-md-5 m-md-2 wow animate__animated animate__fadeInRight">
-        <?php $loop = new WP_Query( array( 'post_type' => 'horaire','orderby'=> array('date' =>'ASC') )); ?>
-            <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                <h4 class="pl-md-5 text-md-left"><?php echo get_field('jour');?></h4>
-                <p class="pl-md-5 text-md-center"><?php echo get_field('horaire');?></p>
+            <?php $loop = new WP_Query(array('post_type' => 'horaire', 'orderby' => array('date' => 'ASC'))); ?>
+            <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+                <h4 class="pl-md-5 text-md-left"><?php echo get_field('jour'); ?></h4>
+                <p class="pl-md-5 text-md-center"><?php echo get_field('horaire'); ?></p>
                 <hr>
-            <?php endwhile;?>
+            <?php endwhile; ?>
         </div>
     </div>
 </div>
@@ -394,7 +394,7 @@
                         tomates, noix.
                     </div>
                     <div class="col-3">
-                       <span class="price"> 7,90€</span>
+                        <span class="price"> 7,90€</span>
                     </div>
                     <div class="col-3">
                         <span class="price">12,20€</span>
