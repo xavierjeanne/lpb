@@ -10348,15 +10348,30 @@ header .navbar {
   background-color: white;
   z-index: 1;
   margin-top: -100px; }
-  /* line 173, assets/scss/layout/_header.scss */
+  /* line 174, assets/scss/layout/_header.scss */
   .header_main .resa {
     margin-top: 400px;
     width: 80%; }
-    /* line 176, assets/scss/layout/_header.scss */
+    /* line 178, assets/scss/layout/_header.scss */
     .header_main .resa h1 {
-      font-style: italic;
-      color: #872B2E;
-      font-weight: bold; }
+      text-transform: uppercase;
+      color: white;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px black; }
+    /* line 184, assets/scss/layout/_header.scss */
+    .header_main .resa a {
+      color: white;
+      background-color: #872B2E;
+      border-radius: 10px;
+      padding: 10px;
+      -webkit-transition-duration: 0.5s;
+              transition-duration: 0.5s; }
+      /* line 190, assets/scss/layout/_header.scss */
+      .header_main .resa a:hover {
+        background-color: white;
+        border: 1px solid #872B2E;
+        color: #872B2E;
+        text-decoration: none; }
 
 /**
  * Modules

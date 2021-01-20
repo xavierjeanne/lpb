@@ -38,6 +38,22 @@ jQuery(document).ready(function () {
         jQuery('#navbarSupportedContent').toggleClass('animate__animated animate__fadeInRight');
     });
 
+    jQuery("#plats").owlCarousel({
+      items:1,
+      loop:true,
+      pagination:false,
+      autoHeight: false,
+      responsive : {
+        0 : {
+          dots:true,
+          nav: false,
+        },
+        575 : {
+            dots: false,
+            nav: true,
+        }
+      }
+    });
 
     //Loader
     jQuery(window).on('load', function () {

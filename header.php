@@ -22,8 +22,8 @@
 
     <div class="container-fluid p-0">
         <header role="banner">
-        <nav class="navbar navbar-expand-xl pt-3 pb-3 ">
-                <a class="navbar-brand" href="<?php echo home_url();?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo.png" alt="Les Petites Bouches" class="logo-img"/><span class="d-none d-md-inline-block ml-3">Les Petites Bouches</span></a>
+            <nav class="navbar navbar-expand-xl pt-3 pb-3 ">
+                <a class="navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo.png" alt="Les Petites Bouches" class="logo-img" /><span class="d-none d-md-inline-block ml-3">Les Petites Bouches</span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <!--<span class="navbar-toggler-icon"></span>-->
                     <span></span>
@@ -52,8 +52,8 @@
             <div class="container">
                 <div class="row text-center">
                     <div class="col-12 resa p-4">
-                        <h1 class="text-left">Bienvenue au restaurant les petites bouches</h1>
-                        <p class="text-right"><a href="">Réservation par téléphone</a></p>
+                        <h1 class="pb-5">Bienvenue au restaurant les petites bouches</h1>
+                        <p><a href="tel:+33983304530">Réservation par téléphone</a></p>
                     </div>
                 </div>
             </div>

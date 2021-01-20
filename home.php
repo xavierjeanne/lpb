@@ -1105,8 +1105,19 @@
         </div>
     </div>
 </div>
-<div class="slider" id="plats">
-
+<div class="slider" id="plat">
+    <div class="row">
+        <div class="owl-carousel owl-theme pt-2" id="plats">
+            <?php $loop = new WP_Query( array( 'post_type' => 'plats','orderby'=> array('date' =>'ASC') )); ?>
+            <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                <div class="item p-3">
+                    <?php $photo = get_field('image');?>
+                    <?php $photo_url=$photo['sizes']['large'];?>
+                    <img  src="<?php echo $photo_url; ?>" alt="<?php echo esc_attr($photo['alt']); ?>" />
+                </div>
+            <?php endwhile;?>
+        </div>
+    </div>
 </div>
 <div class="avis" id="avis">
 
